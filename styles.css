@@ -12,14 +12,10 @@ body,
 }
 
 #container img {
-  height: 400px;
+  height: 300px;
 }
 
 @media (max-width: 420px) {
-  #container img {
-    height: 300px;
-  }
-
   #container h1 {
     font-size: 35px !important;
   }
