@@ -11,7 +11,7 @@ body,
   height: 100%;
 }
 
-#container img {
+#container .profile-img {
   height: 300px;
 }
 
@@ -37,7 +37,7 @@ body,
 }
 
 @media (max-width: 290px) {
-  #container img {
+  #container .profile-img {
     height: 200px;
   }
 
@@ -63,7 +63,7 @@ body {
   padding: 0 30px;
 }
 
-#container img {
+#container .profile-img {
   border-radius: 50%;
   border: 5px solid #3bbef3;
 }
@@ -118,6 +118,7 @@ body {
 
 .projects-container{
   margin-top: 30px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -127,7 +128,10 @@ body {
   text-align: justify;
   background-color: rgb(255, 255, 255);
   padding: 20px;
-
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project h3{
@@ -167,4 +171,8 @@ body {
 
 .link.github{
   background: #333;
+}
+
+.project img{
+  width: 100%;
 }
