@@ -15,6 +15,21 @@ body,
   height: 300px;
 }
 
+::-webkit-scrollbar
+{
+  width: 10px !important;
+  height: 10px !important;
+}
+::-webkit-scrollbar-track
+{
+  background: none !important;
+}
+::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  background: #111 !important;
+}
+
 @media (max-width: 420px) {
   #container h1 {
     font-size: 35px !important;
@@ -66,13 +81,14 @@ body {
   opacity: 0.6;
 }
 
-#container p {
+#container p.description {
   text-align: center;
   max-width: 500px;
   opacity: 0.8;
   font-size: 20px;
   line-height: 1.6;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 600px) {
@@ -98,4 +114,57 @@ body {
   transition: color 0.2s;
   color: #3bbef3;
   border-color: #3bbef3;
+}
+
+.projects-container{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.projects-container .project {
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+
+}
+
+.project h3{
+  color: #111;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 20px 0px;
+}
+
+.project p {
+  color: #333;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.project .buttons-container{
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+}
+
+.link{
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-transform: uppercase;
+  max-width: max-content;
+  font-size: 11px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.link.access{
+  background-color: #3bbef3;
+}
+
+.link.github{
+  background: #333;
 }
