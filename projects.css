@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  ::-webkit-scrollbar
+  {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  ::-webkit-scrollbar-track
+  {
+    background: none !important;
+  }
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 20px;
+    background: #111 !important;
+  }
+  
+  body {
+    background: #333;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    text-rendering: optimizelegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+header a {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 10px;
+  padding-bottom: 3px;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+
+header a:hover {
+  transition: color 0.2s;
+  color: #3bbef3;
+  border-color: #3bbef3;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h1{
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.title p{
+  text-align: center;
+  max-width: 500px;
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.projects-container{
+  width: 90%;
+}
+
+#container .content{
+  margin-bottom: 30px;
+}
+
+#container .content .project{
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 4px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 0px;
+}
+
+.project img{
+  width:95%;
+}
+
+.project h3{
+  color: #111;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+.project p {
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.project .buttons-container{
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+}
+
+.link{
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-transform: uppercase;
+  max-width: max-content;
+  font-size: 11px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+.link.access{
+  background-color: #3bbef3;
+}
+
+.link.github{
+  background: #333;
+}
+
+.project img{
+  width: 100%;
+}
